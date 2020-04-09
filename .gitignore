@@ -1,0 +1,33 @@
+#Prerequisites
+*.d
+
+#Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+#precompiled Headers
+*.gch
+*.pch
+
+#compiled dynamic libraries
+*.so
+*.dylib
+*.dll
+
+#compiled static libraries
+#.lai
+*.la
+*.a
+*.lib
+
+#executables
+*.exe
+*.out
+*.app
+
+#directory
+model/
+lib/
+build/

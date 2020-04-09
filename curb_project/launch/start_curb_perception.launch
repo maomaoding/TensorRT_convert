@@ -1,0 +1,7 @@
+<launch>
+    <param name="curb_model" value="/home/ubuntu/dyh/tensorrt_trial/curb_project/model/TRTModel_vggscnn"/>
+	<node name="curb_perception" pkg="curb_perception" type="curb_perception" output="screen" />
+    <node name="velodyne2baselink" pkg="tf" type="static_transform_publisher" args="2.8 -0.58 1.80 1.5304 -0.0021 0.0060 base_link velodyne 100" />
+    <node name="visual2baselink" pkg="tf" type="static_transform_publisher" args="0.836 0.110 1.770 -1.590794 -0.004803 -1.679402 base_link visual 100" />
+    <!--param name="lane_output" value=""/-->
+</launch>
